@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a57722764c5cc23c0b66e20ed1bf44aca86c61ce76bb5ece132d9af0cee203a3
-size 614
+{
+	"name": "zipcode-api",
+	"version": "1.0.0",
+	"description": "A REST Api designed to simplify the process of automatically determining if a potential client is within a service area. Calculate Distance Between Canadian Zipcodes",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "node --watch --env-file=.env server"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com-personal:theolecuyer/zipcode-api.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"dependencies": {
+		"colors": "^1.4.0",
+		"express": "^5.1.0"
+	}
+}
