@@ -105,9 +105,15 @@ After installation, your project directory should contain:
 zipcode-api/
 ├─ data/
 │  └─ canadian_postal_codes.json
+│  └─ postalLookup.js
 ├─ controllers/
+│  └─ zipcontroller.js
 ├─ routes/
+│  └─ zipcanada.js
 ├─ middleware/
+│  └─ error.js
+│  └─ logger.js
+│  └─ notfound.js
 ├─ package.json
 ├─ package-lock.json
 └─ server.js
