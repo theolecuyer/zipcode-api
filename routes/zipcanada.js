@@ -3,6 +3,6 @@ import { getZip } from "../controllers/zipcontroller.js"
 const router = express.Router()
 
 //Get Zip code data
-router.get("/", getZip)
+router.get("/:id", getZip)
 
 export default router

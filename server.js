@@ -1,5 +1,5 @@
 import express from "express"
-import zip from "./routes/zip.js"
+import zip from "./routes/zipcanada.js"
 import logger from "./middleware/logger.js"
 import errorHandler from "./middleware/error.js"
 import notFound from "./middleware/notfound.js"
@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: false }))
 app.use(logger)
 
 // Routes
-app.use("/api/zip", zip)
+app.use("/api/zipcanada", zip)
 
 // Error handle route not found
 app.use(notFound)
