@@ -55,7 +55,7 @@ export const getZipDistance = async (req, res, next) => {
 		const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
 
 		const earthRadiusKm = 6371
-		const distanceKm = earthRadiusKm * c
+		const distanceKm = Math.ceil(earthRadiusKm * c)
 
 		res.status(200).json({
 			zip1: zip1.postal_code,
