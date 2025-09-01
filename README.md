@@ -81,7 +81,7 @@ This will install all dependencies listed in `package.json`, including:
 
 **Note:** Make sure you are running a supported version of Node.js (v20+ recommended).
 
-### 5. Verify Installation
+### 3. Verify Installation
 
 After installation, your project directory should contain:
 
