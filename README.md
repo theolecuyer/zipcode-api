@@ -81,22 +81,6 @@ This will install all dependencies listed in `package.json`, including:
 
 **Note:** Make sure you are running a supported version of Node.js (v20+ recommended).
 
-### 3. Install Git LFS (if not already installed)
-
-This project uses a large JSON file for Canadian postal codes, tracked with **Git LFS**. Make sure Git LFS is installed:
-
-```bash
-git lfs install
-```
-
-### 4. Pull the large JSON file via Git LFS
-
-```bash
-git lfs pull
-```
-
-This ensures the `data/canadian_postal_codes.json` file is downloaded correctly.
-
 ### 5. Verify Installation
 
 After installation, your project directory should contain:
@@ -104,7 +88,7 @@ After installation, your project directory should contain:
 ```
 zipcode-api/
 ├─ data/
-│  └─ canadian_postal_codes.json
+│  └─ postal_codes.db
 │  └─ postalLookup.js
 ├─ controllers/
 │  └─ zipcontroller.js
@@ -143,4 +127,4 @@ For regular production running:
 npm start
 ```
 
-The API will be available at `http://localhost:8000` (or the port specified in your `.env` file).
+The API will then be available at `http://localhost:8000` (or the port specified in your `.env` file).
